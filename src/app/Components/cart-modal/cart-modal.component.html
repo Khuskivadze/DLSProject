@@ -1,0 +1,18 @@
+<div class="modal" (click)="onCloseClick()"  >
+  <div class="cart" (click)="$event.stopPropagation()">
+    <div>
+      <div class="cart-title">
+        <h2>კალათა</h2>
+        <button  (click)="onCloseClick()"><img src="assets/Close-256%201.png" alt="close"></button>
+      </div>
+      <div class="cart-holder">
+        <app-cart-item  *ngFor="let prod of cartService.getProducts()" [product]="prod"  ></app-cart-item>
+      </div>
+    </div>
+    <div class="summery">
+      <p>ჯამი........................................   {{cartService.totalPrice}}  ₾</p>
+      <p>მიტანა .......................................  10 ₾</p>
+      <button>გადახდა</button>
+    </div>
+  </div>
+</div>

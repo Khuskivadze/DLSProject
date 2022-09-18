@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-img">
+    <img src="{{product.img}}">
+  </div>
+  <div class="card-info">
+    <div class="card-title">
+      <h2> {{product.title}} </h2>
+    </div>
+    <div class="card-price">
+      <div>
+        <span>ფასი:</span>
+        <p> {{product.price}} ₾</p>
+      </div>
+     <app-card-add-btn (click)="addToCart(product.id)" [product]="product" ></app-card-add-btn>
+    </div>
+  </div>
+</div>

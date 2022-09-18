@@ -1,0 +1,10 @@
+<div class="cart-item">
+  <div class="cart-item-img">
+    <img src="{{product.img}}" alt="">
+  </div>
+  <div class="cart-item-info">
+    <h3>{{product.title}}</h3>
+    <p>ფასი: {{product.price}} ₾</p>
+  </div>
+  <button (click)="cartService.removeProduct(product.id)" ><img src="assets/Minus-256%201.png" alt="minus"></button>
+</div>

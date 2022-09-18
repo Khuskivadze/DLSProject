@@ -1,0 +1,40 @@
+.cart-item {
+  width: 100%;
+  height: 77px;
+  border-radius: 10px;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px 0;
+
+  .cart-item-img {
+    width: 20%;
+    height: 70%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .cart-item-info {
+    h3 {
+      font-size: 0.9rem;
+    }
+    p {
+      opacity: 0.4;
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #EAEAEA;
+    background: transparent;
+    cursor: pointer;
+  }
+}

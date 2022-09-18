@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use "src/app/Style/index";
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box!important;
+}
+
+body {
+  background: #E2F5FF!important;
+  font-family: 'Roboto', Calibri;
+}
+
+.content {
+  margin: 40px 30px;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none!important;
+  color: black!important;
+}
